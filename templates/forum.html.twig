@@ -4,20 +4,26 @@
 
 {% block body %}
     <div class="container">
-        <ul class="list-group">
+        <h3>Authors</h3>
+        <ul>
             {% for author in authors %}
-                <li class="list-group-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ author.name }}</h5>
-                            {% for post in posts %}
-                                <p class="card-text">{{ post.title }}</p>
-                            {% endfor %}
-                            <a href="{{ path ('post', {id: author.id}) }}" class="btn btn-primary">View post</a>
-                        </div>
-                    </div>
+                <li>
+                    <h5>
+                        <a href="{{ path('author', {id: author.id}) }}">{{ author.name }}</a>
+                    </h5>
                 </li>
             {% endfor %}
         </ul>
+        <h3>Posts</h3>
+        <ul>
+            {% for post in posts %}
+                <li>
+                    <a href="{{ path('post', {id: post.id}) }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="container">
+        <a href="{{ path ('insert') }}" class="btn btn-primary">New post</a>
     </div>
 {% endblock %}
