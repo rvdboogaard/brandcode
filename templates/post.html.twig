@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Post{% endblock %}
+
+{% block nav %}
+    <div class="container">
+        <h1>
+            <u>
+                {{ post.title }}
+            </u>
+        </h1>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="card">
+            <div class="card-body bg-dark text-white">
+                <h5>
+                    {{ authorName }}:
+                </h5>
+                {{ post.message }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
