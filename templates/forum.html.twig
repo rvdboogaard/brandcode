@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Forum{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <ul class="list-group">
+            {% for author in authors %}
+                <li class="list-group-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ author.name }}</h5>
+                            {% for post in posts %}
+                                <p class="card-text">{{ post.title }}</p>
+                            {% endfor %}
+                            <a href="{{ path ('post', {id: author.id}) }}" class="btn btn-primary">View post</a>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
