@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New post{% endblock %}
+
+{% block nav %}
+    <div class="container">
+        <h2>
+            <u>New Post</u>
+        </h2>
+{% endblock %}
+
+{% block body %}
+        {{ form(postForm) }}
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    <div class="container mt-5">
+        <h2>
+            <u>New Author</u>
+        </h2>
+        {{ form(authorForm) }}
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <a href="{{ path ('forum') }}" class="btn btn-danger">Back</a>
+    </div>
+{% endblock %}
