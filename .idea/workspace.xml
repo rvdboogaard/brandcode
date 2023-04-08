@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39eb29cd-b698-4863-9806-2bdee7330cbb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/author.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/insert.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ForumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ForumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forum.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forum.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/author.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/author.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/insert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/insert.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,6 +187,7 @@
       <updated>1680881047101</updated>
       <workItem from="1680881049634" duration="177000" />
       <workItem from="1680886273376" duration="11884000" />
+      <workItem from="1680953118291" duration="891000" />
     </task>
     <servers />
   </component>
@@ -207,15 +204,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/templates/author.html.twig</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
